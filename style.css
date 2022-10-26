@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 4rem;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+header li {
+    padding: 1rem;
+    flex: 1;
+    border: 1px solid black;
+}
+
+.hero {
+    background-color: #333;
+    height: 32rem;
+    padding: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.hero button {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.cards {
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards article img {
+    background-color: #bdbdbd;
+    width: 100%;
+    height: 50%;
+}
+
+.cards div {
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards div article {
+    border: 1px solid black;
+
+    height: 34rem;
+    border-bottom: 1px gray solid;
+    flex: 1;
+}
+
+.cards div:first-of-type article:first-of-type {
+    flex: 2;
+} 
