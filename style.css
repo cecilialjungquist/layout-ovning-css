@@ -16,10 +16,6 @@ body {
     margin: auto;
 }
 
-header, footer {
-    padding: 0 10rem;
-} 
-
 h2 {
    padding: 1rem 0;
 }
@@ -30,26 +26,33 @@ a {
 }
 
 header {
-    margin: 0 1rem;
+    padding: 1rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header img {
-    height: 4rem;
+    height: 3rem;
+}
+
+nav {
+    width: 50%;
 }
 
 header .nav {
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
+    flex-wrap: wrap;
 }
 
 header li {
+    text-align: center;
     padding: 1rem;
     flex: 1;
-    border: 1px solid black;
+}
+
+p {
+    line-height: 1.5em; 
 }
 
 .hero {
@@ -83,27 +86,30 @@ header li {
     flex-direction: column;
 }
 
-.cards div {
-    border: 1px solid black;
-
+.cards > div {
     display: flex;
-    justify-content: end;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
-.cards article {
-    border: 1px solid black;
-    padding: 1rem;
-    min-width: 15rem;
-    min-height: 34rem; 
+.flexbox {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-width: 60%;
+}
+
+article {
+    height: 34rem; 
     border-bottom: 1px gray solid;
-    
     flex: 1;
 }
 
-.cards div:first-of-type article:first-of-type {
-   flex: 2;
-} 
+.no-flex {
+    min-width: 19.5rem;
+}
 
 .cards article img {
     width: 100%;
@@ -112,6 +118,7 @@ header li {
 }
 
 .quote {
+    margin-bottom: 5rem;
     text-align: center;
     font-style: italic;
 }
@@ -127,3 +134,40 @@ blockquote {
     font-size: 2rem;
     padding: 2rem 0;
 }
+
+footer {
+    background-color: #333;
+    padding: 2rem 10rem;
+    color: white;
+    display: flex;
+    gap: 5%;
+}
+
+.footer__nav {
+    flex: 1;
+}
+
+.footer__about-us {
+    flex: 3;
+}
+
+.footer__social-media {
+    flex: 2;
+}
+
+
+h4 {
+    font-size: 1.625rem;
+    padding-bottom: 1em;
+}
+
+footer a {
+    line-height: 2em;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 10%;
+}
+
