@@ -25,6 +25,12 @@ a {
     color: black;
 }
 
+p {
+    line-height: 1.5em; 
+}
+
+/* .-.-.-.-.-.-.-.-.- HEADER .-.-.-.-.-.-.-.-.- */
+
 header {
     padding: 1rem 10rem;
     display: flex;
@@ -40,20 +46,18 @@ nav {
     width: 50%;
 }
 
-header .nav {
+.nav__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-header li {
+.nav__item {
     text-align: center;
     padding: 1rem;
     flex: 1;
 }
 
-p {
-    line-height: 1.5em; 
-}
+/* .-.-.-.-.-.-.-.-.- HERO .-.-.-.-.-.-.-.-.- */
 
 .hero {
     background-color: #333;
@@ -80,17 +84,31 @@ p {
     font-weight: bold;
 }
 
-.cards {
+/* .-.-.-.-.-.-.-.-.- CARDS .-.-.-.-.-.-.-.-.- */
+
+.card__container {
     padding: 5rem 10rem;
     display: flex;
     flex-direction: column;
 }
 
-.cards > div {
+.card__container > div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
+}
+
+article {
+    height: 34rem; 
+    border-bottom: 1px gray solid;
+    flex: 1;
+}
+
+.card__img {
+    width: 100%;
+    height: 50%;
+    background-color: #bdbdbd;
 }
 
 .flexbox {
@@ -101,21 +119,11 @@ p {
     min-width: 60%;
 }
 
-article {
-    height: 34rem; 
-    border-bottom: 1px gray solid;
-    flex: 1;
-}
-
 .no-flex {
     min-width: 19.5rem;
 }
 
-.cards article img {
-    width: 100%;
-    height: 50%;
-    background-color: #bdbdbd;
-}
+/* .-.-.-.-.-.-.-.-.- QUOTE .-.-.-.-.-.-.-.-.- */
 
 .quote {
     margin-bottom: 5rem;
@@ -130,10 +138,13 @@ article {
     background-color: #bdbdbd;
 }
 
-blockquote {
+.quote blockquote {
     font-size: 2rem;
     padding: 2rem 0;
 }
+
+
+/* .-.-.-.-.-.-.-.-.- FOOTER .-.-.-.-.-.-.-.-.- */
 
 footer {
     background-color: #333;
@@ -147,16 +158,7 @@ footer {
     flex: 1;
 }
 
-.footer__about-us {
-    flex: 3;
-}
-
-.footer__social-media {
-    flex: 2;
-}
-
-
-h4 {
+footer h4 {
     font-size: 1.625rem;
     padding-bottom: 1em;
 }
@@ -166,7 +168,15 @@ footer a {
     color: white;
 }
 
-.icons {
+.footer__about-us {
+    flex: 3;
+}
+
+.footer__social-media {
+    flex: 2;
+}
+
+.footer__icons {
     display: flex;
     gap: 10%;
 }
