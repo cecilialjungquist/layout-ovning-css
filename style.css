@@ -82,6 +82,12 @@ nav {
     padding: 1rem 2rem;
     border-radius: 2rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-image: linear-gradient(to right, rgb(173, 71, 143) , rgb(90, 70, 219));
+    color: white;
 }
 
 /* .-.-.-.-.-.-.-.-.- CARDS .-.-.-.-.-.-.-.-.- */
@@ -116,7 +122,10 @@ article {
     flex: 2;
     flex-wrap: wrap;
     gap: 1rem;
-    min-width: 60%;
+}
+
+.flexbox article {
+    min-width: 15rem;
 }
 
 .no-flex {
